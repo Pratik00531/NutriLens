@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri-Lens</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #26A688; /* Teal background */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+
+        nav {
+            background-color: #26A688; /* Slightly darker teal for navbar */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between; /* Align items to edges */
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 50px;
+            width: 200px;
+        }
+
+        .container {
+            padding: 20px;
+            flex-grow: 1; /* Allow content to take up available space */
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-right: 100px;
+            align-items: center;
+            
+        }
+
+        h1 {
+            font-size: 6em;
+            margin: 0;
+        }
+
+        h2 {
+           margin-top: -5px;
+           opacity: 80%;
+        }
+
+        .features {
+            background-color: #26A688;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .feature img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><img style="height: 150px;" src="logo.png" alt=""></div>
+        <div style="margin-top: -100px;">
+            <a href="#">Home</a>
+            <a href="#">Scan Product</a>
+            <a href="#">Top Products</a>
+            <a href="#">About</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>WELCOME TO</h2>
+        <h1>NUTRI-LENS</h1>
+        <h2>Empower Your Choices With Product Transparency</h2>
+        <p style="width: 800px; font-size: 15px;opacity: 50px;">Our Platform Empowers Consumers With Detailed Product Insights, Combining Barcode Scanning, Expert Reviews, And Influencer Contributions To Promote Transparency And Trust For Health-Conscious Users, Professionals, And Businesses.</p>
+
+        <div class="features">
+            <div class="feature">
+                <img style="width: 150px;" src="phone_barcode.png" alt="Scan Product">
+            </div>
+            <div class="feature">
+                <img style="width: 200px;margin-left: 250px;" src="cart.png" alt="Shopping Cart">
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
