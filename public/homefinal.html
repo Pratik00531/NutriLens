@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutri-Lens</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #26A688;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: #26A688;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1rem;
+    }
+
+    nav .logo img {
+      height: 80px;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #26A688;
+      color: #ffffff;
+      
+    }
+
+    .container h1 {
+     
+      color: #fcfcfc;
+      margin-bottom: 20px;
+      font-size: 6em;
+      margin: 0;
+      opacity: 100%;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .product {
+      background-color: #e8fdf9;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .product h2 {
+      font-size: 1.5rem;
+      color: #2b2b6d;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .product:hover {
+      background-color: #d9f7f2;
+      transform: scale(1.02);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .feature img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .split-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+      flex-wrap: wrap;
+    }
+
+    .left-section {
+      flex: 1;
+      text-align: left;
+      color: #fff;
+    }
+
+    .left-section h1 {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    .left-section p {
+      font-size: 1.1rem;
+      margin: 15px 0 20px;
+    }
+
+    .left-section button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #3cb371;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .left-section button:hover {
+      background-color: #2e8b57;
+    }
+
+    .right-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right-section img {
+      max-width: 70%;
+      max-height: 80%;
+    }
+
+    .scan-section {
+      padding: 50px 20px;
+      background-color: #26A688;
+      text-align: center;
+    }
+
+    .scan-section h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .scan-details {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+      color: black;
+    }
+
+    .scan-detail {
+      flex: 1;
+      max-width: 45%;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      border: none;
+      cursor: pointer;
+    }
+
+    .scan-detail:hover {
+      background-color: #f0f8ff;
+      transform: scale(1.02);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .scan-detail h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .scan-detail p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .expert-reviews {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff; /* White background */
+  color: #26A688; /* Match with theme */
+}
+
+.expert-reviews img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+    footer {
+      background-color: #ffffff;
+      color: #26A688;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo"><img src="/assets/logo.png" alt="Nutri-Lens Logo"></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="scanner.html">Scan Product</a>
+      <a href="top-products.html">Top Products</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 style="opacity: 70%;">WELCOME TO</h2>
+    <h1 style="opacity: 100%;">NUTRI-LENS</h1>
+    <h2 style="opacity: 70%;">Empower Your Choices With Product Transparency</h2>
+    <p style="opacity: 70%; margin-top: 50px;" class="description">
+      Our platform empowers consumers with detailed product insights, combining barcode scanning,<br> expert reviews, 
+      and influencer contributions to promote transparency and trust for health-conscious users, professionals, and businesses.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <img src="/assets/phone_barcode.png" alt="Scan Product">
+      </div>
+      <div class="feature">
+        <img src="/assets/cart.png" alt="Shopping Cart">
+      </div>
+    </div>
+  </div>
+
+  <div class="split-section">
+    <div class="left-section">
+      <h1>Uncover the Truth Behind Your Products</h1>
+      <p>Empowering informed choices with transparency and trust.</p>
+      <button onclick="location.href='/scanner'">Scan a Product</button>
+    </div>
+    <div class="right-section">
+      <img src="/assets/home2.png" alt="Barcode">
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Explore Top Products</h1>
+    <div style="padding-top: 50px;" class="products">
+      <button class="product" onclick="location.href='/newpage'">
+        <h2>Snacks</h2>
+        <p>Discover a curated selection of healthy and delicious snacks, from protein bars to fruit chips.</p>
+      </button>
+      <button class="product" onclick="location.href='/newpage'">
+        <h2>Drinks</h2>
+        <p>Find refreshing and hydrating beverages that support your health goals, from sparkling water to herbal teas.</p>
+      </button>
+      <button class="product" onclick="location.href='/newpage'">
+        <h2>Everyday Essentials</h2>
+        <p>Explore a range of essential grocery items, from natural cleaning products to organic produce.</p>
+      </button>
+    </div>
+  </div>
+
+  <div class="scan-section">
+    <h1>Scan a Product</h1>
+    <div class="scan-details">
+      <button class="scan-detail" onclick="location.href='/home2'">
+        <h2>Scan a Barcode or QR Code</h2>
+        <p>Simply open the app and point your camera at a barcode or QR code. Our scanner will quickly and accurately identify the product and display detailed information.</p>
+      </button>
+      <button class="scan-detail" onclick="location.href='/home2'">
+        <h2>Discover Product Details and Health Insights</h2>
+        <p>Access a wealth of information about the product, including its ingredients, nutritional value, and potential health benefits. Our app will help you make informed choices about what you consume.</p>
+      </button>
+    </div>
+  </div>
+
+  <div class="expert-reviews">
+    <h1>Read Expert Reviews</h1>
+    <img src="/assets/page4.png" alt="Read Expert Reviews">
+  </div>
+
+  <footer>
+    &copy; 2025 Nutri-Lens. All rights reserved.
+  </footer>
+</body>
+</html>
+l
